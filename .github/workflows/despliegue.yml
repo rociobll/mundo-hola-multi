@@ -14,10 +14,19 @@ jobs:
       uses: shivammathur/setup-php@v2
       with:
         php-version: '8.3'
+
     - name: Install dependencies
       run: composer install
-    - name: Run tests
-      run: ./vendor/bin/phpunit tests
+
+    - name: Grant execution permission to PHPUnit
+      run: chmod +x ./vendor/bin/phpunit
+
+    - name: Verify PHPUnit installation
+      run: ls -l ./vendor/bin/
+
+    - name: Run PHPUnit tests
+      run: php ./vendor/bin/phpunit tests
+      
   deploy:
     runs-on: ubuntu-latest
     needs: test

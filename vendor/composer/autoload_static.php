@@ -16,6 +16,10 @@ class ComposerStaticInita50aa7a4aac6a4ff483de5f21554c3ee
         array (
             'PhpParser\\' => 10,
         ),
+        'H' => 
+        array (
+            'HolaMundoMultilenguaje\\' => 23,
+        ),
         'D' => 
         array (
             'DeepCopy\\' => 9,
@@ -26,6 +30,10 @@ class ComposerStaticInita50aa7a4aac6a4ff483de5f21554c3ee
         'PhpParser\\' => 
         array (
             0 => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser',
+        ),
+        'HolaMundoMultilenguaje\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/src',
         ),
         'DeepCopy\\' => 
         array (
