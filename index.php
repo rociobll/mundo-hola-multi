@@ -58,7 +58,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <div class="container">
         <h1>Generador aleatorio de Hola Mundos!!!</h1>
         <form method="post">
-            <button type="submit">Generar saludo</button>
+            <button type="submit">Generar saludo ya</button>
         </form>
         <?php if (!empty($mensaje))
             echo "<p><b>" . $codigo . ":</b> " . htmlspecialchars($mensaje) . "</p>";
